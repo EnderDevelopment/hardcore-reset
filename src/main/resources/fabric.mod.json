@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hardcorefriends",
+  "version": "${version}",
+  "name": "Hardcore Friends",
+  "description": "A mod for hardcore gameplay with friends.",
+  "authors": ["EnderDevelopment"],
+  "contact": {
+    "homepage": "https://enderdevelopment.com",
+    "sources": "https://github.com/EnderDevelopment/hardcorefriends"
+  },
+  "license": "MIT",
+  "icon": "assets/hardcorefriends/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.enderdevelopment.hardcorefriends.HardcoreFriendsMod"
+    ],
+    "client": [
+      "com.enderdevelopment.hardcorefriends.HardcoreFriendsModClient"
+    ]
+  },
+  "mixins": [
+    "hardcorefriends.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "1.20.4"
+  }
+}
